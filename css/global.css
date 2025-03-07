@@ -1,0 +1,46 @@
+/* Ajout typo Michroma */
+@font-face {
+    font-family: Michroma;
+    src: url('../ressources/Michroma-Regular.ttf') format('truetype');
+}
+
+/* Global */
+html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Menu */
+.navBar{
+    overflow: hidden;
+    color: var(--text-color);
+    font-family: Michroma, sans-serif;
+    border-bottom: 0.1em solid var(--text-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.navBar button{
+    margin: 0;
+}
+
+/* Liens*/
+a:hover {
+    color: var(--linkHover);
+}
+
+a.active {
+    color: var(--linkHover);
+}
+

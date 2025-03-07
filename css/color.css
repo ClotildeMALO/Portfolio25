@@ -8,7 +8,8 @@
 	--color2Dark : #F2B545;
 	--link: #343AA7;
 	--linkHover : #6634a7;
-	--linkActive : --color1Dark;
+	--menuBg : var(--text-color);
+	--menuText : var(--bg-color);
 }
 
 /* Style sombre */
@@ -22,6 +23,8 @@
 	--link: #343AA7;
 	--linkHover : #6634a7;
 	--linkActive : --color1;
+	--menuBg : var(--text-color);
+	--menuText : var(--bg-color);
 }
 
 html {
