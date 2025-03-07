@@ -1,0 +1,30 @@
+/* Style clair */
+[data-theme="light"] {
+	--bg-color: #ececec;
+	--text-color: #212121;
+	--color1 : #F5D5D6;
+	--color2 : #F0CF92;
+	--color1Dark : #D25A5F;
+	--color2Dark : #F2B545;
+	--link: #343AA7;
+	--linkHover : #6634a7;
+	--linkActive : --color1Dark;
+}
+
+/* Style sombre */
+[data-theme="dark"] {
+	--bg-color: #212121;
+	--text-color: #ececec;
+	--color1 : #F5D5D6;
+	--color2 : #F0CF92;
+	--color1Dark : #D25A5F;
+	--color2Dark : #F2B545;
+	--link: #343AA7;
+	--linkHover : #6634a7;
+	--linkActive : --color1;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
