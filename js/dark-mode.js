@@ -4,6 +4,7 @@
 class ThemeManager {
     constructor() {
         this.root = document.documentElement;
+        this.themeToggle = document.querySelector('.themeBox'); 
         this.init();
         this.bindEvents();
     }
@@ -12,13 +13,16 @@ class ThemeManager {
         const theme = localStorage.getItem('theme') || 
             (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         this.setTheme(theme);
+
+        if (this.themeToggle) {
+            this.themeToggle.checked = (theme === 'dark');
+        }
     }
 
     bindEvents() {
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('[themeButton]')
-                .forEach(toggler => toggler.addEventListener('click', () => this.toggleTheme()));
-        });
+        if (this.themeToggle) {
+            this.themeToggle.addEventListener('change', () => this.toggleTheme());
+        }
     }
 
     setTheme(theme) {
@@ -27,9 +31,8 @@ class ThemeManager {
     }
 
     toggleTheme() {
-        const newTheme = this.root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        const newTheme = this.themeToggle.checked ? 'dark' : 'light';
         this.setTheme(newTheme);
     }
 }
-
-new ThemeManager();
+document.addEventListener('DOMContentLoaded', () => new ThemeManager());

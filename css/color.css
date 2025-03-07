@@ -10,6 +10,7 @@
 	--linkHover : #6634a7;
 	--menuBg : var(--text-color);
 	--menuText : var(--bg-color);
+	--bg-Accent :#cacaca;
 }
 
 /* Style sombre */
@@ -25,6 +26,7 @@
 	--linkActive : --color1;
 	--menuBg : var(--text-color);
 	--menuText : var(--bg-color);
+	--bg-Accent :#cacaca;
 }
 
 html {
