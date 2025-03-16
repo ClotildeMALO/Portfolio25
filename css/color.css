@@ -12,7 +12,7 @@
 	--menuText : var(--bg-color);
 	--bg-Accent :#cacaca;
 	--bg-Footer : #aa9cbd;
-
+	--text-button: #212121;
 }
 
 /* Style sombre */
@@ -28,8 +28,9 @@
 	--linkActive : --color1;
 	--menuBg : var(--text-color);
 	--menuText : var(--bg-color);
-	--bg-Accent :#cacaca;
+	--bg-Accent :rgb(0, 0, 0);
 	--bg-Footer : #aa9cbd;
+	--text-button: #212121;
 }
 
 html {

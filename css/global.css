@@ -21,6 +21,13 @@ main {
     flex-grow: 1;
 }
 
+@media screen and (min-width: 768px){
+    main{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -238,3 +245,33 @@ a:hover {
 a.active {
     color: var(--linkHover);
 }
+
+/* Titre */
+h1 {
+    font-family: Michroma;
+}
+
+/* Texte */
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+/* Bouton */
+button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid var(--color1);
+    box-shadow: 0px 5px 5px var(--bg-Accent);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+button a {
+    color: var(--text-button);
+    text-decoration: none;
+}
+
+/* Particule arriere plan*/
