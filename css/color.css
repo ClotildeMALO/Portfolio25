@@ -11,6 +11,8 @@
 	--menuBg : var(--text-color);
 	--menuText : var(--bg-color);
 	--bg-Accent :#cacaca;
+	--bg-Footer : #aa9cbd;
+
 }
 
 /* Style sombre */
@@ -27,6 +29,7 @@
 	--menuBg : var(--text-color);
 	--menuText : var(--bg-color);
 	--bg-Accent :#cacaca;
+	--bg-Footer : #aa9cbd;
 }
 
 html {
