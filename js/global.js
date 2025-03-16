@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
+
+    // Particule arriere plan
+    fetch('js/particles.json')
+        .then(response => response.json())
+        .then(config => {
+            particlesJS('particles-js', config);
+        })
+        .catch(error => console.error('Erreur lors du chargement de particles.json:', error));
 });
