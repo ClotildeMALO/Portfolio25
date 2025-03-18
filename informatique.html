@@ -2,24 +2,22 @@
 <html>
     <html lang="fr">
     <head>
-        <title>Portfolio | Clotilde MALO</title>
+        <title>Informatique | Clotilde MALO</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/color.css">
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/home.css">
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="js/dark-mode.js"></script>
-        <script src="js/global.js"></script>
+        <link rel="stylesheet" href="css/informatique.css">
+
     </head>
 
     <body>
         <div id="particles-js"></div>
         <nav class="navBar">
             <ul>
-                <a href="#" class="active">Accueil</a>
+                <a href="index.html">Accueil</a>
                 <a href="#">Cursus</a>
-                <a href="informatique.html">Informatique</a>
+                <a href="#" class="active">Informatique</a>
                 <a href="#">Communication</a>
                 <a href="#">Contact</a>
 
@@ -49,17 +47,33 @@
         </nav>
 
         <main>
-            <div class="profil">
-                <div class="profilG">
-                    <img src="ressources/Clotilde.jpg" alt="PhotoProfil" class="profilImg">
-                    <button><a href="#">Mon CV</a></button>
+            <div class="allCards">
+
+                <div class="card">
+                    <div class="cardFace cardFront">
+                        <h2>SPlayFav</h2>
+                        <p class="description">Site web permettant de se connecter via 
+                            Spotify, d'analyser nos données musicales et de générer 
+                            une playlist personnalisée en utilisant l'API Spotify.</p>
+                        <br>
+                        <a href="#">Voir plus</a>
+                    </div>
+
+                    <div class="cardFace cardBack">
+                         <button class="cardButtonLanguage">JavaScript</button>
+                        <button class="cardButtonLanguage">HTML</button>
+                        <button class="cardButtonLanguage">CSS</button>
+                        <button class="cardButtonKeyword">Web</button>
+                        <button class="cardButtonKeyword">API</button>
+                        <button class="cardButtonKeyword">Données</button>
+                        <br>
+                        <a href="#">Voir plus</a>
+                    </div>
                 </div>
-                <div class="profilD">
-                    <h1>Clotilde MALO</h1>
-                    <p>Informatique et communication</p>
-                </p>
-                </div>
+                
             </div>
+
+
         </main>
 
         <footer>
@@ -73,5 +87,11 @@
                 <img src="ressources/Email_Light.png" alt="IconeEmail" data-theme-img="Email">
             </a>
         </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/dark-mode.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/card.js"></script>
     </body>
 </html>
