@@ -45,7 +45,7 @@ footer a {
 }
 
 footer img {
-    width: 40px;
+    width: 25px;
     height: auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
