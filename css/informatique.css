@@ -60,7 +60,13 @@
     text-decoration: none;
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    margin-left: 70%;
+    font-weight: bold;
+
+}
+
+.card a:hover{
+    color: var(--linkHover);
 }
 
 .card button{
