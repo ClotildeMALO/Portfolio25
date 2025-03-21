@@ -1,0 +1,153 @@
+h1{
+    text-align: center;
+}
+
+.frise {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.frise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.year {
+    position: relative;
+    width: 30%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.year:nth-child(odd) {
+    left: 20%;
+    text-align: right;
+}
+
+.year:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.year::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg-Footer);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.year:nth-child(odd)::before {
+    right: -12px;
+}
+
+.year:nth-child(even)::before {
+    left: -12px;
+}
+
+.year h2 {
+    margin-bottom: 1rem;
+    font-family: Michroma;
+}
+
+.year h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    margin: 3px 0 2px 0;
+
+}
+
+.year h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-size: 16px;
+    margin: 3px 0 0px 0;
+}
+
+.year h5 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 12px;
+    margin: 3px 0 0px 0;
+}
+
+.year p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 7px 0 0px 0;
+}
+
+.cours, .job {
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cours {
+    background-color: var(--color1);
+}
+
+.job {
+    background-color: var(--color2);
+}
+
+/* Responsive pour mobile */
+@media screen and (max-width: 768px) {
+    .frise::before {
+        left: 2em;
+    }
+
+    .year {
+        width: 90%;
+        padding-left: 2rem;
+        text-align: left;
+    }
+
+    .year::before {
+        left: -0.7em;
+    }
+
+    .year:nth-child(odd), .year:nth-child(even) {
+        left: 2em;
+    }
+
+    .year h2, h3, h4, h5,p{
+        text-align: left;
+    }
+
+    .year h2{
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .year h3{
+        font-size: 16px;
+    }
+
+    .year h4{
+        font-size: 14px;
+    }
+
+    .year h5{
+        font-size: 12px;
+    }
+
+    .year p{
+        font-size: 12px;
+    }
+
+
+}
