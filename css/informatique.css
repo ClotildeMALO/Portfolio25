@@ -79,10 +79,13 @@
 
 .cardButtonKeyword{
     background-color: var(--color1);
+    color: var(--text-color);
 }
 
 .cardButtonLanguage{
     background-color: var(--color2);
+    color: var(--text-color);
+
 }
 
 h1{
