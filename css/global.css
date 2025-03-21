@@ -56,7 +56,6 @@ footer img:hover {
 
 /* Menu */
 .navBar{
-    overflow: hidden;
     color: var(--text-color);
     font-family: Michroma, sans-serif;
     border-bottom: 0.1em solid var(--text-color);
@@ -65,6 +64,7 @@ footer img:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 80px;
 }
 
 .navBar a {
@@ -173,12 +173,13 @@ input:checked + .themeButton:before {
         padding: 20px;
         box-sizing: border-box;
         align-items: flex-start;
-        z-index: 0;
+        z-index: 1;
         
     }
 
     .navBar ul.active {
         display: flex;
+        background-color: var(--bg-color);
     }
 
     .burger {
