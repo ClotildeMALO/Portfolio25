@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <html lang="fr">
+    <head>
+        <title>Projet SPlayFav | Clotilde MALO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/projetInfo.css">
+        <link rel="icon" href="ressources/Clotilde.jpg">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        <nav class="navBar">
+            <ul>
+                <a href="index.html">Accueil</a>
+                <a href="cursus.html">Cursus</a>
+                <a href="informatique.html" class="active">Informatique</a>
+                <a href="#">Communication</a>
+                <a href="#">Contact</a>
+
+                <div class="footer-logos">
+                    <a href="https://github.com/ClotildeMALO">
+                        <img src="ressources/GitHub_Light.png" alt="LogoGitHub" data-theme-img="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/clotilde-malo/">
+                        <img src="ressources/LinkedIn_Light.png" alt="LogoLinkedIn" data-theme-img="LinkedIn">
+                    </a>
+                    <a href="mailto:clotildem71@hotmail.com">
+                        <img src="ressources/Email_Light.png" alt="IconeEmail" data-theme-img="Email">
+                    </a>
+                </div>
+            </ul>
+
+            <label class="switch">
+                <input type="checkbox" class="themeBox">
+                <span class="themeButton"></span>
+            </label>
+            
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <main>
+            <h1>Projet informatique - SPlayFav</h1>
+
+            <button class="ButtonLanguage">JavaScript</button>
+            <button class="ButtonLanguage">HTML</button>
+            <button class="ButtonLanguage">CSS</button>
+            <button class="ButtonKeyword">Web</button>
+            <button class="ButtonKeyword">API</button>
+            <button class="ButtonKeyword">Données</button>
+
+            <p class="description">Site web permettant de se connecter via 
+                Spotify, d'analyser nos données musicales et de générer 
+                une playlist personnalisée en utilisant l'API Spotify.</p>
+
+            <video controls>
+                <source src="ressources/Info/splayfav/SPlayFav.mkv" type="video/mkv">
+                <source src="ressources/Info/splayfav/SPlayFav.mp4" type="video/mp4">
+                <p>
+                    Le navigateur ne supporte pas la vidéo.
+                </p>
+            </video>
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                            <img id="slide-1" src="ressources/Info/splayfav/SPlayFavConnexion.png" alt="SPlayFav Connexion">
+                            <img id="slide-2" src="ressources/Info/splayfav/SPlayFavAccueil.png" alt="SPlayFav Accueil">
+                            <img id="slide-3" src="ressources/Info/splayfav/SPlayFavPlaylist.png" alt="SPlayFav Playlist">
+                            <img id="slide-4" src="ressources/Info/splayfav/SPlayFavTop.png" alt="SPlayFav Top artistes">
+                            <img id="slide-5" src="ressources/Info/splayfav/SPlayFavTop2.png" alt="SPlayFav Top musiques">
+                            <img id="slide-6" src="ressources/Info/splayfav/SPlayFavGenerateur.png" alt="SPlayFav Générateur de playlist">
+                    </div>
+                    <div class="slider-nav">
+                        <a class="active" href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="https://github.com/ClotildeMALO">
+                <img src="ressources/GitHub_Light.png" alt="LogoGitHub" data-theme-img="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/clotilde-malo/">
+                <img src="ressources/LinkedIn_Light.png" alt="LogoLinkedIn" data-theme-img="LinkedIn">
+            </a>
+            <a href="mailto:clotildem71@hotmail.com">
+                <img src="ressources/Email_Light.png" alt="IconeEmail" data-theme-img="Email">
+            </a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+       <script src="js/dark-mode.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/slider.js"></script>
+
+    </body>
+</html>
