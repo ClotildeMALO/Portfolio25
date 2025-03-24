@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sliderNavLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();
-            sliderNavLinks.forEach(link => link.classList.remove('active'));
-            event.target.classList.add('active');
+            setTimeout(() => {
+                sliderNavLinks.forEach(link => link.classList.remove('active'));
+                event.target.classList.add('active');
+            }, 100); 
         });
     });
 });
