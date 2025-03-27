@@ -76,6 +76,8 @@
                 <div class="content2">
                     <section class="container">
                         <div class="slider-wrapper">
+                            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
                             <div class="slider">
                                     <img id="slide-1" src="ressources/Info/jeutextuel/CreationPerso.png" alt="Jeu textuel Création de personnage">
                                     <img id="slide-2" src="ressources/Info/jeutextuel/Ville.png" alt="Jeu textuel Ville">
@@ -94,7 +96,11 @@
                     </section>
                 </div>
             </div>
-
+            
+            <div class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-img" src="" alt="Image agrandie">
+            </div>
         </main>
 
         <footer>

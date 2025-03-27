@@ -53,7 +53,10 @@ p{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center center;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .slider-nav{
@@ -83,6 +86,34 @@ p{
     opacity: 1;
 }
 
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color2);
+    color: var(----bg-Footer);
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 0;
+    box-shadow: none;
+}
+
+.slider-btn:hover {
+    background-color: var(--color1);
+}
+
+.slider-btn.prev {
+    left: 0.5rem;
+}
+
+.slider-btn.next {
+    right: 0.5rem;
+}
+
 /* Lien GitHub */
 .gitProject {
     color: var(--link);    
@@ -94,6 +125,37 @@ p{
     display: block;
     margin: 0;
 }
+
+/* Lightbox*/
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    border-radius: 8px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
 
 /* Video et caroussel disposition*/
 .contents {
@@ -136,5 +198,9 @@ video{
     .gitProject, p, .button-container{
         text-align: left;
         margin-left: 2%;
+    }
+
+    .slider-btn {
+        font-size: 0.5rem;
     }
 }
