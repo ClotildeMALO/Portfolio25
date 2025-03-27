@@ -269,6 +269,7 @@ button{
     border-radius: 15px;
     cursor: pointer;
     background-color: var(--color1);
+    border:none;
 }
 
 button a {
