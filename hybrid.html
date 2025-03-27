@@ -71,45 +71,32 @@
             <a class="gitProject" href="https://github.com/ClotildeMALO/Hybrid" target="_blank">Voir le code sur GitHub</a>
             <br>
 
-            <div class="contents">
-                <div class="content1">
-                    <video controls>
-                        <source src="#" type="video/mp4"> <!--TODO : Ajouter une vidéo de l'utilisation-->
-                        <p>
-                            Le navigateur ne supporte pas la vidéo.
-                        </p>
-                    </video>
+            <section class="container">
+                <div class="slider-wrapper">
+                    <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+                    <div class="slider">
+                            <img id="slide-1" src="ressources/Info/hybrid/Inscription.png" alt="Hybrid Inscription">
+                            <img id="slide-2" src="ressources/Info/hybrid/Connexion.png" alt="Hybrid Connexion">
+                            <img id="slide-3" src="ressources/Info/hybrid/Espace-Perso-Admin.png" alt="Hybrid Espace personnel administrateur">
+                            <img id="slide-4" src="ressources/Info/hybrid/Gestion-de-l-Entreprise-Admin.png" alt="Hybrid Gestion de l'entreprise administrateur">
+                            <img id="slide-5" src="ressources/Info/hybrid/Espace-Perso-Utilisateur.png" alt="Hybrid Espace personnel utilisateur">
+                            <img id="slide-6" src="ressources/Info/hybrid/Espace-Perso-Annulation-Reservation.png" alt="Hybrid Espace personnel annulation de réservation">
+                            <img id="slide-7" src="ressources/Info/hybrid/Reservations.png" alt="Hybrid Reservations">
+                            <img id="slide-8" src="ressources/Info/hybrid/Mentions-Legales.png" alt="Hybrid Mentions légales">
+                    </div>
+                    <div class="slider-nav">
+                        <a class="active" href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                    </div>
                 </div>
-
-                <div class="content2">
-                    <section class="container">
-                        <div class="slider-wrapper">
-                            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-                            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
-                            <div class="slider">
-                                    <img id="slide-1" src="ressources/Info/hybrid/Inscription.png" alt="Hybrid Inscription">
-                                    <img id="slide-2" src="ressources/Info/hybrid/Connexion.png" alt="Hybrid Connexion">
-                                    <img id="slide-3" src="ressources/Info/hybrid/Espace-Perso-Admin.png" alt="Hybrid Espace personnel administrateur">
-                                    <img id="slide-4" src="ressources/Info/hybrid/Gestion-de-l-Entreprise-Admin.png" alt="Hybrid Gestion de l'entreprise administrateur">
-                                    <img id="slide-5" src="ressources/Info/hybrid/Espace-Perso-Utilisateur.png" alt="Hybrid Espace personnel utilisateur">
-                                    <img id="slide-6" src="ressources/Info/hybrid/Espace-Perso-Annulation-Reservation.png" alt="Hybrid Espace personnel annulation de réservation">
-                                    <img id="slide-7" src="ressources/Info/hybrid/Reservations.png" alt="Hybrid Reservations">
-                                    <img id="slide-8" src="ressources/Info/hybrid/Mentions-Legales.png" alt="Hybrid Mentions légales">
-                            </div>
-                            <div class="slider-nav">
-                                <a class="active" href="#slide-1"></a>
-                                <a href="#slide-2"></a>
-                                <a href="#slide-3"></a>
-                                <a href="#slide-4"></a>
-                                <a href="#slide-5"></a>
-                                <a href="#slide-6"></a>
-                                <a href="#slide-7"></a>
-                                <a href="#slide-8"></a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
+            </section>
 
             <div class="lightbox">
                 <span class="close">&times;</span>
