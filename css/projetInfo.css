@@ -57,6 +57,7 @@ p{
     object-position: center center;
     max-height: 100%;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .slider-nav{
