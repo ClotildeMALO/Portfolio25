@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-family: Michroma;
+}
+
+p{
+    margin: 0 10px;
+}
+
+/* Carousel*/
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.slider {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+button.prev, button.next {
+    background: var(--color2);
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 2px 8px;
+    margin: 0 10px;
+    user-select: none;
+    font-weight: bold;
+}
+button.prev:hover, button.next:hover {
+    background: var(--color1);
+
+}
+
+/* Lightbox*/
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    border-radius: 8px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile*/
+@media screen and (max-width: 769px) {
+    main:not(h1){
+        margin-left: 2%;
+    }
+}
