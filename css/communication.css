@@ -25,6 +25,7 @@ p{
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px 0;
+    scrollbar-color: var(--color2) var(--bg-color);
 }
 
 .slider img {
